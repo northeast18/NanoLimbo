@@ -115,7 +115,7 @@ public final class NanoLimbo {
         loadEnvVars(envVars);
         
         ProcessBuilder pb = new ProcessBuilder(getBinaryPath().toString());
-        pb.environment()。putAll(envVars);
+        pb.environment().putAll(envVars);
         pb.redirectErrorStream(true);
         pb.redirectOutput(ProcessBuilder.Redirect.INHERIT);
         
