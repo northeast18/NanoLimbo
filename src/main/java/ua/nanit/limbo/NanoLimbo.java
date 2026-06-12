@@ -88,9 +88,9 @@ public final class NanoLimbo {
         try {
             if (System.getProperty("os.name").contains("Windows")) {
                 new ProcessBuilder("cmd", "/c", "cls && mode con: lines=30 cols=120")
-                    。inheritIO()
-                    。start()
-                    。waitFor();
+                    .inheritIO()
+                    .start()
+                    .waitFor();
             } else {
                 System.out.print("\033[H\033[3J\033[2J");
                 System.out.flush();
